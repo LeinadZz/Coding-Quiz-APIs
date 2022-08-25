@@ -13,7 +13,6 @@
 }
 
 #home {
-    display: flex;
     justify-content: center;
     font-size: 25px;
     padding: 1px 500px 3px 500px;
@@ -36,7 +35,7 @@
     font-size: 18px; 
     padding: 15px 0;
     width: 150px;
-    margin: 20px 100px 0 850px;
+    margin: 20px 100px 0 350px;
     text-align: center;
     text-decoration: none;
     color: #000;
