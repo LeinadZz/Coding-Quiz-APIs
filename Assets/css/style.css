@@ -33,6 +33,7 @@
     justify-content: center;
     align-items: center;
     font-size: 18px; 
+    font-family: sans-serif;
     padding: 15px 0;
     width: 150px;
     margin: 20px 100px 0 350px;
@@ -52,4 +53,70 @@
     box-shadow: 2px 5px #000;
     transition: 150ms;
     transform: scale(1);
+}
+
+.end-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+#end {
+    justify-content: center;
+    font-size: 25px;
+    padding: 1px 500px 3px 500px;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    font-family: sans-serif;
+    padding: 15px 30px 15px 30px;
+    width: 155px;
+    margin: 20px 0 0 100px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+    background: linear-gradient(1deg, #cb7af7 0%, #f48fbe) 100%;
+}
+
+.button3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    font-family: sans-serif;
+    padding: 15px 30px 15px 30px;
+    width: 155px;
+    margin: 20px 0 0 72px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    border-radius: 15px;
+    background: linear-gradient(1deg, #cb7af7 0%, #f48fbe) 100%;
+}
+
+.button2:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px #000;
+    transition: 150ms;
+    transform: scale(1);
+}
+
+#highScoresList {
+    color:#000;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.high-score {
+    color:#000;
+    font-size: 28px;
+    margin-bottom: 5px;
 }
