@@ -165,7 +165,6 @@ function startTimer() {
 
 function deductTime(seconds) {
     totalTime -= seconds;
-    checkTime();
     displayTime();
 }
 

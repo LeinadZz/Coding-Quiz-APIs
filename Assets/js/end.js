@@ -10,8 +10,14 @@ finalScore.innerText = mostRecentScore
 
 username.addEventListener('keyup', function() {
     saveHighScore.disabled = !username.value
+    
 })
 
+saveHighScore.addEventListener('keyup', function() {
+    saveScore();
+    
+})
+/*
 function saveScore(event) {
     event.preventDefualt()
 
@@ -95,3 +101,31 @@ function getNewScoreIndex(newEntry, scoreList) {
     }
     return scoreList.length;
 }
+
+*/
+
+function saveHighscore() {
+    // get value of input box
+    var initials = username.value.trim();
+  
+    // make sure value wasn't empty
+    if (initials !== "") {
+      // get saved scores from localstorage, or if not any, set to empty array
+      var highScores =
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+  
+      // format new score object for current user
+      var newScore = {
+        score: time,
+        initials: initials
+      };
+  
+      // save to localstorage
+      highscores.push(newScore);
+      window.localStorage.setItem("highscores", JSON.stringify(highscores));
+  
+      // redirect to next page
+      window.location.href = "highscores.html";
+    }
+  }
+  
